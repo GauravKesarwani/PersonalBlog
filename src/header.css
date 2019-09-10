@@ -1,0 +1,22 @@
+a {
+    text-decoration: none;
+    color: #2076e1;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    grid-template-rows: 30px;
+    grid-template-areas: ". header .";
+    background-color: #292929;
+    justify-items: end;
+}
+
+.nav {
+    grid-area: header;
+}
+
+.nav-link {
+    color: #FFF;
+    margin: 8px;
+}

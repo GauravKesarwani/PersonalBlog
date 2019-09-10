@@ -1,0 +1,84 @@
+@import url('./../app.css');
+@import url('./../header.css');
+@import url('./../footer.css');
+
+* {
+    box-sizing: border-box;
+    
+}
+body {
+    font: 400 18px/1.5 "Droid Sans",Helvetica,Arial,sans-serif;
+}
+
+#container {
+    display: grid;
+    grid-template-areas: 
+        "sidebar main main main"
+        "footer footer footer footer";
+    grid-template-rows: 1fr 80px;
+    height: 100vh;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    padding: 20px;
+    background-color: #76C9EC;
+    color: #FFF;
+}
+
+.sidebar__item {
+    display: block;
+    margin-bottom: 8px;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.sidebar__item:hover {
+    color: #2076e1;
+}
+
+.content {
+    margin-left: 10px;
+    grid-area: main;
+}
+
+.content__posts,
+.posts__item {
+    list-style: none;
+    padding: 0;
+}
+
+.content__posts {
+    display: grid;
+    grid-auto-rows: minmax(200px, auto);
+    grid-template-columns: 80%;
+    justify-content: center;
+    grid-gap: 15px;
+}
+
+.posts__item {
+    border: 1px solid transparent;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.posts__title {
+    text-decoration: none;
+    color: #111;
+}
+
+.item__heading {
+    font-family: "Droid Sans Mono",monospace;
+    font-size: 26px;
+}
+
+.posts__title:hover {
+    color: #2076e1;
+}
+
+#footer {
+    grid-area: footer;
+}

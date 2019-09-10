@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+    <title>Blog Post</title>
+    <link rel="stylesheet" href="./post.css" />
+</head>
+<body>
+    <article class="post">
+        <header class="post-header">
+            <h2>JavaScript Promises in Depth</h2>
+            <div class="post-meta">
+                <h5 class="post__by">by Gaurav Kesarwani</h5>
+                <div class="post__date">Sept 8, 2019</div>
+            </div>
+        </header>
+        <section class="post-content">
+            <a class="back_btn" href="./../home/Home.html">Back to blog</a>
+            <h4>Introduction</h4>
+            <p class="post__introduction">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse aliquid laboriosam minima ex 
+                praesentium recusandae reprehenderit unde sit tempore atque aut commodi quae expedita corrupti, 
+                dignissimos architecto. Eius, maiores ad?</p>
+            <h4>Promises Implementation</h4>
+            <pre class="post__code">
+                <code>
+                    var promise1 = new Promise(function(resolve, reject) {
+                        setTimeout(function() {
+                        resolve('foo');
+                    }, 300);
+                    });
+                    
+                    promise1.then(function(value) {
+                        console.log(value);
+                        // expected output: "foo"
+                    });
+                </code>
+            </pre>
+            <h4>More details</h4>
+            <p>
+                "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+                voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
+                veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis
+                autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem
+                eum fugiat quo voluptas nulla pariatur?"
+            </p>
+        </section>
+        <div class="post-share">
+            <span class="share-on">Share on:</span>
+            <ul>
+                <li class="btn btn-share-facebook" href="#">Facebook</li>
+                <li class="btn btn-share-twitter" href="#">Twitter</li>
+                <li class="btn btn-share-linkedin" href="#">LinkedIn</li>
+            </ul>
+        </div>
+    </article>
+    <footer class="footer"></footer>
+</body>
+</html>

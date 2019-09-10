@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+}
+
+h2, h5 {
+    margin: 0;
+}
+
+h4 {
+    margin: 10px 0 2px 0;
+}
+
+.post-header {
+    grid-area: header;
+    background-color: #292929;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-evenly;
+}
+
+.post-header > h2 {
+    align-self: center;
+}
+
+.post-content {
+    grid-area: content;
+    border-bottom: 1px solid lightgray;
+}
+
+.post-meta {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center;
+    width: calc(100% - 200px);
+}
+
+.post-share {
+    grid-area: share;
+}
+
+.post-share > ul {
+    padding: 0;
+    display: inline-block;
+}
+
+.post {
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    grid-template-rows: 200px 1fr 100px;
+    grid-template-areas: 
+        "header header header"
+        ". content ."
+        ". share ."
+}
+
+.post__code {
+    background-color: #eeeeee;
+}
+
+.back_btn {
+    text-decoration: none;
+    color: #2076e1;
+    display: block;
+    margin: 15px 0;
+}
+
+.btn {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    color: #FFF;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.btn-share-facebook {
+    background-color: #3b5998;
+}
+
+.btn-share-twitter {
+    background-color: #00aced;
+}
+
+.btn-share-linkedin {
+    background-color: #007bb6;
+}
