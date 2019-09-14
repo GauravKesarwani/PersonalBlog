@@ -4,12 +4,9 @@ a {
 }
 
 .header{
-    display: grid;
-    grid-template-columns: 100px 1fr 100px;
-    grid-template-rows: 30px;
-    grid-template-areas: ". header .";
+    display: flex;
     background-color: #292929;
-    justify-items: end;
+    align-items: center;
 }
 
 .nav {
@@ -17,6 +14,6 @@ a {
 }
 
 .nav-link {
-    color: #FFF;
+    color: #ffffff;
     margin: 8px;
 }
