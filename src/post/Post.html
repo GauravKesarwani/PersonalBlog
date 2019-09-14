@@ -54,17 +54,23 @@
         </section>
         <div class="post-share">
             <span class="share-on">Share on:</span>
-            <ul>
-                <li class="btn btn-share-facebook" href="#">Facebook</li>
-                <li class="btn btn-share-twitter" href="#">Twitter</li>
-                <li class="btn btn-share-linkedin" href="#">LinkedIn</li>
-            </ul>
+            <div class="share-buttons">
+                <button class="btn btn-share-facebook">
+                    <a class="share-link" href="#">Facebook</a>
+                </button>
+                <button class="btn btn-share-twitter">
+                    <a class="share-link" href="#">Twitter</a>
+                </button>
+                <button class="btn btn-share-linkedin">
+                    <a class="share-link" href="#">LinkedIn</a>
+                </button>
+            </div>
         </div>
     </article>
     <footer class="footer">
-        <ul class="social-media">
-            <li class="social-media-item">
-                <a href="https://github.com/gauravkesarwani">
+        <div class="social-media">
+            <button class="media-btn">
+                <a class="media-link" href="https://github.com/gauravkesarwani">
                     <span class="icon icon--github">
                         <svg viewBox="0 0 16 16">
                             <path fill="#828282"
@@ -72,10 +78,11 @@
                             </path>
                         </svg>
                     </span>
-                    <span class="username">gauravkesarwani</span></a>
-            </li>
-            <li class="social-media-item">
-                <a href="https://twitter.com/gauravkesarwani">
+                    <span class="username">gauravkesarwani</span>
+                </a>
+            </button>
+            <button class="media-btn">
+                <a class="media-link" href="https://twitter.com/gauravkesarwani">
                     <span class="icon icon--twitter">
                         <svg viewBox="0 0 16 16">
                             <path fill="#828282"
@@ -85,8 +92,8 @@
                     </span>
                     <span class="username">gauravkesarwani</span>
                 </a>
-            </li>
-        </ul>
+            </button>
+        </div>
         <p>I’m Gaurav Kesarwani. I am a front end engineer based in Sunnyvale, CA. </p>
         <span class="copyright">CopyRight Information</span>
     </footer>

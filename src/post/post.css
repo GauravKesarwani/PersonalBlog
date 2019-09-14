@@ -47,9 +47,15 @@ h4 {
     grid-area: share;
 }
 
-.post-share > ul {
+.share-buttons {
     padding: 0;
     display: inline-block;
+    margin-top: 5px;
+}
+
+.share-link {
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .post {
@@ -80,6 +86,7 @@ h4 {
     color: #ffffff;
     padding: 5px;
     border-radius: 4px;
+    border: none;
 }
 
 .btn-share-facebook {
@@ -96,4 +103,5 @@ h4 {
 
 .username {
     color: #ffffff;
+    margin-left: 4px;
 }

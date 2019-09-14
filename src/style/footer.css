@@ -8,9 +8,13 @@
     padding: 20px;
 }
 
-.social-media, 
-.social-media-item {
-    list-style: none;
+.media-btn {
+    background-color: transparent;
+    border: none;
+}
+
+.media-link {
+    display: flex;
 }
 
 .icon > svg {
