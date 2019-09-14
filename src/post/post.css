@@ -47,15 +47,12 @@ h4 {
     grid-area: share;
 }
 
-.share-buttons {
-    padding: 0;
-    display: inline-block;
-    margin-top: 5px;
-}
-
 .share-link {
     text-decoration: none;
     color: #ffffff;
+    padding: 0;
+    display: inline-block;
+    margin-top: 5px;
 }
 
 .post {
@@ -79,8 +76,11 @@ h4 {
     margin: 15px 0;
 }
 
-.btn {
-    list-style: none;
+.share-links {
+    display: inline-block;
+}
+
+.share-link {
     display: inline-block;
     padding: 0;
     color: #ffffff;
@@ -89,15 +89,15 @@ h4 {
     border: none;
 }
 
-.btn-share-facebook {
+.facebook {
     background-color: #3b5998;
 }
 
-.btn-share-twitter {
+.twitter {
     background-color: #00aced;
 }
 
-.btn-share-linkedin {
+.linkedin {
     background-color: #007bb6;
 }
 
