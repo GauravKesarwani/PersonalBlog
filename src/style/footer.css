@@ -8,6 +8,15 @@
     padding: 20px;
 }
 
+.social-media,
+.social-media-item {
+    list-style: none;
+}
+
+.social-media {
+    padding: 0;
+}
+
 .media-btn {
     background-color: transparent;
     border: none;
@@ -20,4 +29,9 @@
 .icon > svg {
     width: 16px;
     height: 16px;
+}
+
+.username {
+    color: #ffffff;
+    margin-left: 4px;
 }
